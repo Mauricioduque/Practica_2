@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <practica2.h>
 /*
+ * Mauricio  Duque Quintero
+ * Universidad de Antioquia
 
 */
 
@@ -13,7 +15,7 @@ int main()
     int num,dinero,longitud=0,resultado=0,len_A,len_B;
     int **puntero_matriz;
     long long int numero;
-    int tam;
+    int tam=0;
     char **matriz;
     char menu,fila;
     bool e,estrella;
@@ -218,6 +220,7 @@ int main()
             if(x[2]>x[1] || y[2]>y[1]) cout<<"No hay interesccion";
             else if(x[1]<x[3] && y[1]<y[3]) cout<<" "<<x[2]<<","<<y[2]<<","<<x[1]-x[2]<<","<<y[1]-y[2];
             else cout<<x[2]<<","<<y[2]<<","<<x[3]-x[2]<<","<<y[3]-y[2];
+            cout<<endl;
             break;
             case 16:
                 cout<<"Ingrese la dimension n de la cuadricula cuadrada: ";
